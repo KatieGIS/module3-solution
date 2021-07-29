@@ -1,0 +1,150 @@
+body {
+    font-size: 15px;
+    color: #fff;
+    background-color: #c0c0c0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.row {
+    width: 98%;
+    margin-left: 1%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 10;
+}
+
+
+/** HEADER **/
+
+#header-nav {
+    background-color: #eff871;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+#nav-list {
+    text-align: center;
+}
+
+.navbar-brand h1 {
+    /* Restaurant name */
+    font-family: 'Oxygen', sans-serif;
+    color: #000000;
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    margin-top: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#header-nav .container {
+    position: relative;
+    margin-left: 10px;
+}
+
+
+/**main content**/
+
+#main-content .container {
+    background-color: #ffffff;
+    border: 1px solid #eff871;
+    position: relative;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 1%;
+}
+
+#main-content h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Oxygen', sans-serif;
+    color: #000000;
+}
+
+#main-content h3 {
+    font-family: 'Oxygen', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.backToTop {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+}
+
+.row p {
+    font-family: 'Oxygen', sans-serif;
+    color: #444343;
+    margin-top: 5px;
+}
+
+
+/* RESPONSIVE CSS -------------------------------------------------- */
+
+
+/********** Large devices view **********/
+
+@media (min-width: 992px) {
+    .col-md-4,
+    .col-md-6 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 47%;
+    }
+    .col-md-4 {
+        width: 31.33%;
+    }
+    #main-content .container {
+        max-height: 1600px;
+        min-height: 1200px;
+    }
+}
+
+
+/********** Medium devices view **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-sm-6 {
+        width: 48%;
+    }
+    .col-sm-12 {
+        float: left;
+        width: 98%;
+    }
+    #main-content .container {
+        max-height: 1350px;
+        min-height: 1100px;
+    }
+}
+
+
+/********** Small devices view **********/
+
+@media (max-width: 767px) {
+    .col-xs-12 {
+        float: left;
+        width: 98%;
+    }
+    #main-content .container {
+        max-height: max-content;
+        min-height: 800px;
+    }
+}
